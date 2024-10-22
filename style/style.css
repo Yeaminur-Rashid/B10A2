@@ -1,0 +1,901 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Style+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "inter";
+  color: white;
+}
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 3px solid green; */
+
+}
+.container {
+  width: 80%;
+  /* margin: 0 auto; */
+}
+
+.display-hidden {
+  display: none;
+}
+
+.d-flex{
+  display: flex;
+}
+
+header {
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+<<<<<<< HEAD
+  );
+  
+=======
+  ); 
+>>>>>>> 0e846994d7ae85a48519396f4b7b1bfed8733cfe
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+p {
+  color: rgba(255, 255, 255, 0.65);
+}
+section {
+  margin: 100px 0;
+  /* border: 1px solid blue; */
+}
+main {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav i{
+  display: none !important;
+  
+}
+.img-class{
+    padding-left: 430px;
+}
+
+/* Navbar */
+.brand {
+  color: rgb(230, 83, 60);
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 5px;
+  padding-left: 0;
+  border-radius: 30px;
+  border: 1px solid rgba(211, 211, 211, 0.329);
+}
+.nav-links > .nav-active {
+  /* padding: 0; */
+  background-color: rgb(230, 83, 60);
+  margin-left: 5px;
+}
+
+.nav-link {
+  list-style: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.active {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 400;
+  color: white;
+  background-color: rgb(230, 83, 60);
+}
+
+/* Banner */
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0px 50px;
+}
+
+.banner-title {
+  color: white;
+  font-size: 5.5rem;
+}
+.shape {
+  font-size: 5.5rem;
+  font-family: "Style Script", cursive;
+  font-weight: 300;
+  font-style: italic;
+}
+.banner-btn-1 {
+  padding: 20px 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(230, 83, 60);
+}
+.banner-btn-2 {
+  padding: 20px 60px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-left: 15px;
+}
+
+.banner-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+  padding: 15px 25px;
+  color: white;
+}
+
+.box-1 {
+  position: absolute;
+  top: 285px;
+  right: 300px;
+}
+.box-2 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 180px;
+  right: 660px;
+}
+.box h3 {
+  font-size: 2.5rem;
+}
+.box p {
+  color: rgba(255, 255, 255, 0.65);
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(230, 83, 60);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Habit styles */
+.habit {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.habit-content {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+  gap: 20px;
+}
+.habit-content > h1 {
+  margin-bottom: 5px !important;
+}
+.habit-circle h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.habit > div {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.habit-circle {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  text-align: center;
+}
+
+.habit-circle img {
+  border-radius: 50%;
+}
+
+/* Run styles */
+.run {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 50px 100px;
+  /* margin-top: 100px; */
+  margin: 0 200px;
+  width: 70%;
+}
+
+.run-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: start;
+  align-items: start;
+  padding-right: 310px;
+}
+
+.run-content h1 {
+  text-align: start;
+}
+
+.run-img {
+  /* padding: 0 100px; */
+  /* padding: 50px; */
+}
+.run-img > img {
+  width: 80%;
+  border-radius: 12px;
+  /* margin: 400px; */
+  float: right;
+}
+
+/* Training section  */
+.collage-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+.item {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.item-1 {
+  grid-column: span 1;
+  background-image: url("../images/exercise1.jpg");
+}
+.item-2 {
+  grid-column: span 1;
+  background-image: url("../images/exercise2.png");
+}
+.item-3 {
+  grid-column: span 1;
+  background-image: url("../images/exercise3.png");
+}
+.item-4 {
+  grid-column: span 1;
+  background-image: url("../images/exercise4.png");
+}
+.item-5 {
+  grid-column: span 1;
+  background-image: url("../images/exercise5.jpg");
+}
+.item-6 {
+  grid-column: span 1;
+  background-image: url("../images/exercise6.jpg");
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.item1 .overlay {
+  background: rgba(0, 255, 255, 0.5); /* Cyan overlay */
+}
+
+/* BMI section */
+.bmi-calculator {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+}
+.bmi-content {
+  background: rgb(34, 34, 34);
+  display: flex;
+  padding: 50px 0;
+  margin-top: 30px !important;
+  width: 100% !important;
+
+}
+
+.bmi-calculator > h1 {
+  text-align: start;
+}
+
+.bmi-calculator > p {
+  width: 90%;
+}
+
+.calc-bmi input,select {
+  border-radius: 8px;
+  height: 48px;
+  padding: 5px 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 5px;
+}
+input::placeholder{
+  color: darkgray;
+}
+.calc-bmi select{
+  background: rgba(255, 255, 255, 0.1);
+  color:  darkgrey;
+  height: 57px;
+  
+}
+.bmi-calc-chart{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bmi-calc-chart table{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+}
+.bmi-calc-chart table th{
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding: 15px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: start;
+}
+.bmi-calc-chart table td{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 14px;
+  padding: 15px 20px;
+}
+.calc-input{
+  display: flex;
+  /* grid-template-columns: repeat(2,1fr); */
+  flex-direction: column;
+  margin-top: 20px;
+  /* width: 100%; */
+  
+}
+.calc-input select{
+  width: 255px;
+}
+.calc-span{
+  /* grid-column:span 2; */
+  width: 525px !important;
+}
+.calc-bmi{
+  /* width: 30%; */
+  padding-right: 300px;
+}
+.bmi-content h2{
+  font-size: 28px;
+  font-weight: 900;
+  margin: 30px 0;
+}
+.bmi-btn{
+  padding: 15px 60px;
+  border: none;
+  margin-top: 30px;
+}
+
+/* Meet our team style */
+.team-collage{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 18px;
+
+}
+.team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.team-pic{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 0 30px 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer1.png");
+
+  
+}
+
+.team-pic h3{
+  font-size: 28px;
+  filter: brightness(100%) !important;
+
+}
+
+.team-pic p{
+  font-size: 18px;
+  filter: brightness(100%);
+
+}
+.team-content{
+  width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+
+
+.team-1{
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer1.png");
+  
+
+}
+.team-2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer2.png");
+
+}
+.team-3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer3.png");
+
+
+}
+.team-4{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer4.png");
+}
+.team-5{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer5.png");
+
+}
+.team-6{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer6.png");
+
+}
+
+/* Upcoming events */
+  .event{
+    width: 80%;
+  }
+
+  .event-container{
+    display: flex;
+    margin-top: 50px;
+
+  }
+  .event-card{
+    margin: 20px;
+    /* border-radius: 10px; */
+    /* padding: 10px; */
+    /* border: 1px solid white; */
+    position: relative;
+
+  }
+  .card-content{
+    padding: 30px 30px 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .event-date{
+    background-color: rgb(230, 83, 60);
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    /* z-index: 1; */
+    /* border-radius: 0 10px 0 0; */
+  }
+
+  .event-card img{
+    width: 100%;
+    /* border-radius: 10px; */
+    /* margin-bottom: 40px; */
+
+  }
+  .read-more{
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .read-more i{
+    margin-left: 5px;
+  }
+
+  .all-event{
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 20px 40px;
+    border: 1px solid rgb(230, 83, 60);
+    background: transparent;
+    /* transition: 0.3s; */
+  }
+  .all-event i{
+    margin-left: 5px;
+    color: rgb(230, 83, 60);
+  }
+  .all-event:hover{
+    background-color: white;
+    border: none;
+    color: black;
+  }
+
+/* Fitness styles */
+footer{
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.footer-content{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  width: 80%;
+  margin: 100px 200px;
+  
+}
+.footer-logo{
+  padding-right: 280px;
+}
+.footer-logo h1{
+  font-size: 80px;
+  color: rgb(230, 83, 60);
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+.footer-logo p{
+  font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.3px;
+}
+
+.footer-content h3{
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.footer-content li{
+  font-size: 23px;
+  line-height: 120%;
+  list-style: none;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.5);
+  
+}
+.footer-end{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-end hr{
+  /* margin: 40px 0; */
+  width: 1524px;
+  border: 1px solid rgba(211, 211, 211, 0.329);
+  
+
+}
+
+.footer-end p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin: 60px 0;
+
+}
+
+
+
+
+/* Responsive layout */
+
+@media (max-width: 576px) {
+  main{
+    width: 100%;
+  }
+  .container{
+    width: 90%;
+    
+  }
+  header{
+    background: linear-gradient(
+    40deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+  }
+  header{
+    background: linear-gradient(
+    40deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  ); 
+  }
+  
+  .nav-links{
+    display: none;
+  }
+  .brand{
+    font-size: 3rem;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+  }
+  .fa-bars{
+    display: inline-block !important;
+    font-size: 1.5rem;
+  }
+  .banner{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-content{
+    padding: 0;
+  }
+  .shape{
+    font-size: 3rem;
+  }
+  .banner-title{
+    font-size: 3rem;
+    text-align: start;
+  }
+  .banner-btn{
+    display: flex;
+  }
+  .banner-btn-1{
+    padding: 15px 20px;
+  }
+  .banner-btn-2{
+    padding: 15px 20px;
+    
+  }
+  .box{
+    padding: 10px 15px;
+  }
+  .box-1{
+  top: 600px;
+  right: 0px;
+  }
+  .box-2{
+    bottom: -309px;
+    right: 170px;
+
+  }
+  section{
+    margin: 30px 0;
+  }
+  .habit{
+    gap: 10px;
+  }
+  .habit-content{
+    width: 100%;
+  }
+  .habit-content h1{
+    font-size: 2rem;
+  }
+  .habit > div{ 
+    gap: 30px;
+  }
+
+
+  .run{
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    margin: 0 100px !important;
+    width: 80%;
+  }
+  .run-content{
+    padding: 0;
+  }
+  .run-btn{
+    width: 80%;
+    margin: 0 auto;
+    /* margin  : 10px 20px; */
+  }
+  .run-content > h1{
+    font-size: 50px;
+  }
+  .run-img > img{
+    margin-top: 20px;
+    width: 100%;
+    float: none;
+  }
+
+  .bmi-calculator{
+    margin: 0 20px;
+  }
+  .bmi-calculator h1{
+    margin-top: 30px;
+    font-size: 40px;
+  }
+  .bmi-content{
+    width: 95% !important;
+    flex-direction: column;
+    padding: 0 10px !important;
+  }
+  .bmi-calc-chart{
+    width: 100%;
+  }
+  .calc-bmi{
+    /* width: 100%; */
+    padding: 20px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .calc-bmi p{
+    text-align: center;
+  }
+
+  .calc-input{
+    width: 100%;
+    
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .calc-input .sex{
+    width: 400px;
+  }
+  .calc-input input{
+    width: 100%;
+  }
+  .calc-span{
+    width: 97.5% !important;
+  }
+
+
+  .team-collage{
+    /* display: flex; */
+    /* width: 100%; */
+    margin: 10px 30px;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    /* flex-direction: column; */
+  }
+  .team h1{
+    font-size: 40px !important;
+  }
+  .team{
+    width: 100%;
+  }
+  .team-content{
+    width: 400px;
+    gap: 20px;
+    /* margin: 0 30px; */
+    margin-bottom: 30px;
+  }
+  .team-pic{
+    width: 290px;
+    height: 290px;
+    /* padding: 10px; */
+    padding-bottom: 15px;
+    margin: 10px 0px;
+
+  }
+  
+     .training{
+    display: none;
+  }
+
+  .event{
+    width: 100%;
+  }
+  .event-container{
+    flex-direction: column;
+  }
+  .event h1{
+    font-size: 40px;
+  }
+  footer{
+    margin-top: 60px;
+  }
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    padding: 30px 20px;
+    margin: 0;
+  }
+  .footer-logo{
+    padding-right: 0;
+  }
+  .footer-logo h1{
+    font-size: 60px;
+  }
+  .footer-content h3{
+    margin-bottom: 20px;
+  }
+  .footer-content p{
+    margin: 20px 0;
+  }
+  .footer-end hr{
+    width: 100%;
+  }
+  .footer-end p{
+    margin: 30px 0;
+  }
+}
